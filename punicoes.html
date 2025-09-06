@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <script src="./src/js/head.js"></script>
+    <title>Lugin - Staff Guide</title>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900">
+
+
+
+    <nav class="bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://lugin.com.br/logo-lugin.png" class="h-8" alt="Lugin Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">STAFF GUIDE</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-1 rtl:space-x-reverse">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">IP: lugin.com.br</button>
+                <button id="theme-toggle" type="button"
+                    class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Abrir menu principal</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="./index.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                            aria-current="page">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./factions.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Factions</a>
+                    </li>
+                    <li>
+                        <a href="./punicoes.html"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">Punições</a>
+                    </li>
+                    <li>
+                        <a href="./duvidas.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Dúvidas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div
+        class="auxilio-punicao-text bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+
+        <div
+            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Aplicando uma punição
+                </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">O primeiro passo para aplicar uma punição é
+                verificar se o jogador já está punido pelo motivo que você deseja punir, pelo comando /checkpunir <NICK>
+                    <br>
+                    Após a verificação, será necessário digitar o comando /punir <NICK>.</p>
+
+        </div>
+
+        <div
+            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ao digitar o comando,
+                    será aberto este menu:
+                </h5>
+            </a>
+            <img src="https://media.discordapp.net/attachments/1412285474478886972/1412285539897315328/image.png?ex=68bbb167&is=68ba5fe7&hm=58c09d156b08f5575a6e397684b1096f6c47bd3b2cc9e0495f5c1ac52c4f3175&=&format=webp&quality=lossless&width=392&height=453"
+                alt="Print do Minecraft">
+
+        </div>
+
+        <div
+            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cada punição tem ID próprio e requer que as provas sejam enviadas no chat.
+                </h5>
+            </a>
+
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Basta selecionar a punição desejada e enviar as
+                provas no chat.</p>
+
+            <img src="https://media.discordapp.net/attachments/1412285474478886972/1412285603713781820/image.png?ex=68bbb176&is=68ba5ff6&hm=31ba961fc739fb055546067dae099f61116331a51d5f644923789e040a03366a&=&format=webp&quality=lossless&width=654&height=150"
+                alt="Print do Minecraft">
+
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Abra em uma nova guia para ver melhor.</p>
+
+        </div>
+
+        <div
+            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Verificando o histórico
+                    de punições de um jogador
+                </h5>
+            </a>
+
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Para verificar o histórico de um jogador, basta
+                digitar o comando /checkpunir <NICK>. </p>
+            <img src="https://cdn.discordapp.com/attachments/1412285474478886972/1412285650920673401/image.png?ex=68bbb182&is=68ba6002&hm=68cdbad7cd5f02f189fb0038dd2889f893dda1e4e506aa4f4b5795339e404741&"
+                alt="Print do Minecraft">
+
+        </div>
+
+        <div
+            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Revogando uma punição
+                </h5>
+            </a>
+
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Para revogar uma punição, basta digitar o
+                comando /revoke <ID da punição>. O ID pode ser obtido pelo histórico de punições do jogador.
+
+                    Após executar o comando, essa mensagem será enviada:</p>
+            <img src="https://cdn.discordapp.com/attachments/1412285474478886972/1412285717064978515/image.png?ex=68bbb191&is=68ba6011&hm=4a76f94f3b3d9c8954bc6517afa5559f4e8661c654bf417a10f5bf433a3cf8c1&"
+                alt="Print do Minecraft">
+
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Depois, basta selecionar o motivo desejado e
+                confirmar sua ação.</p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+
+                    <th scope="col" class="px-6 py-3">
+                        ID
+                    </th>
+
+                    <th scope="col" class="px-6 py-3">
+                        Punição
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Tempo
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Cargo minimo
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        1
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Antijogo
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        <strong>Moderador</strong>
+                    </td>
+
+                </tr>
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        2
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Ameaça
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        3
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Discurso de ódio
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        4
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Comércio
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        5
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Desinformação
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        6
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Divulgação grave
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        7
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Divulgação simples
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        8
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Chargeback
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        9
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Falsificação de provas
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        10
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Linguagem inadequada
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        11
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Spam/Flood
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        12
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Uso de trapaças
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        13
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Nickname inapropriado <strong>(para contas originais)</strong>
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        14
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Nickname inapropriado <strong>(para contas não originais)</strong>
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        15
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Ofensa a jogador
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        16
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Ofensa à equipe/servidor
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        17
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Skin inapropriada
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        18
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Assédio
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+
+                <tr
+                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        19
+                    </th>
+
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Formação de times
+                    </th>
+                    <td class="px-6 py-4">
+                        0
+                    </td>
+                    <td class="px-6 py-4 moderador">
+                        Moderador
+                    </td>
+
+                </tr>
+
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <footer class="bottom-0 left-0 w-full bg-white rounded-lg shadow-sm dark:bg-gray-900">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                Desenvolvido por <a href="#" class="hover:underline">borgxS</a>
+            </span>
+        </div>
+    </footer>
+
+
+
+    <script src="./src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <script src="./src/js/head.js"></script>
+    <title>Lugin - Staff Guide</title>
+</head>
+
+<body>
+
+
+
+    <nav class="bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://lugin.com.br/logo-lugin.png" class="h-8" alt="Lugin Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">STAFF GUIDE</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-1 rtl:space-x-reverse">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">IP:
+                    lugin.com.br</button>
+                <button id="theme-toggle" type="button"
+                    class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Abrir menu principal</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="./index.html"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                            aria-current="page">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./factions.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Factions</a>
+                    </li>
+                    <li>
+                        <a href="./punicoes.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Punições</a>
+                    </li>
+                    <li>
+                        <a href="./duvidas.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Dúvidas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+            <div
+                class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+                <a href="#"
+                    class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
+                    <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 20 14">
+                        <path
+                            d="M11 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm8.585 1.189a.994.994 0 0 0-.9-.138l-2.965.983a1 1 0 0 0-.685.949v8a1 1 0 0 0 .675.946l2.965 1.02a1.013 1.013 0 0 0 1.032-.242A1 1 0 0 0 20 12V2a1 1 0 0 0-.415-.811Z" />
+                    </svg>
+                    Guia de Bolso
+                </a>
+                <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Um guia rápido para a
+                    equipe de moderação</h1>
+                <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">A atuação da equipe de moderação é
+                    fundamental para manter um ambiente saudável, seguro e produtivo para todos os usuários. Este guia
+                    tem como objetivo fornecer informações claras e práticas para que os moderadores possam agir de
+                    forma coerente, ética e eficiente diante das mais diversas situações que surgirem durante o
+                    trabalho.</p>
+
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+                    <a href="#"
+                        class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2">
+                        <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 18 18">
+                            <path
+                                d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z" />
+                        </svg> 
+                        Staff
+                    </a>
+                    <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">Importante</span>
+                    <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Informações Importantes</h2>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        Antes de aplicar uma punição a um jogador por "Skin inapropriada", é necessário conversar com
+                        ele e informar a regra que uma regra está sendo quebrada. Se o jogador for um membro e utilizar
+                        uma versão não original do jogo, a situação deve ser repassada a um Administrador. Caso
+                        contrário, você tem a autorização para aplicar a punição.
+                    </p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        O prazo para a utilização de uma prova é de 7 dias.
+                    </p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        A prova das infrações “Abuso de bugs”, "Antijogo", “Formação de times” e “Uso de trapaças” deve
+                        ser em vídeo.
+                    </p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        Nas denúncias de jogadores, recomendamos que você hospede as provas anexadas em alguma
+                        plataforma. Isso garante que as provas fiquem disponíveis por mais tempo, evitando que sejam
+                        excluídas pelo autor da denúncia, o que poderia resultar na revogação da punição. Você pode
+                        utilizar o Imgur ou Youtube para isso.
+                    </p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        Caso o jogador cometa mais de uma infração em uma só prova, ele deverá ser punido pelo motivo
+                        mais grave.
+                    </p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        Ao gravar um jogador, não é permitido o uso de Circles Mod.
+                    </p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        Influencers só poderão ser punidos por Administradores e superiores.
+                    </p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        Atenção ao aplicar punições por desinformação! Em muitos casos, o jogador pode ter cometido
+                        apenas um erro genuíno, e não deve ser punido por isso.
+                    </p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        Durante todo o período que vocês estiverem na equipe, vocês não poderão estar com nenhum jogador
+                        adicionado à lista de ignorados. Além disso, ajudantes deverão permanecer com o tell ativado até
+                        sua promoção.
+                    </p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        Não é permitido ficar AFK nos lobbies. Se você precisar se ausentar por algum motivo, utilize os
+                        comandos /fake, /v ou saia do servidor.
+                    </p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        É responsabilidade de cada membro responder às perguntas dos jogadores apenas quando tiver
+                        certeza de que a resposta está correta. Em caso de dúvidas, sempre consulte um Administrador.
+                    </p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        No servidor de Factions, apenas <span class="ajudante">Ajudantes</span> podem jogar. <span
+                            class="moderador">Moderadores</span> não são permitidos. Também
+                        não é permitido estar em facções com membros.
+                    </p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        Recomendamos que você troque sua senha mensalmente.
+                    </p>
+
+
+                </div>
+
+                <div
+                    class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+                    <a href="#"
+                        class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2">
+                        <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 18 18">
+                            <path
+                                d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z" />
+                        </svg>
+                        Staff
+                    </a>
+                    <span class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300">Atenção</span>
+                    <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Comandos Exclusivos</h2>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                        <strong>/go ou /btp <nick>: </strong> Teleporta você ao jogador.
+                        <br>
+                        <strong>/s <mensagem>:</strong> Envia uma mensagem no chat exclusivo da equipe.
+                        <br>
+                        <strong>/playerinfo <nick>: </strong> Verifica algumas informações do jogador.
+                        <br>
+                        <strong>/v:</strong> Ativa a invisibilidade para todos os membros.
+                        <br>
+                        <br>
+                        <strong>Alguns comandos ainda não foram implementados. <br>
+                            São eles:</strong>
+                        <br>
+
+                        <strong>/staff: </strong>Lista todos os membros da equipe online no momento.
+                        <br>
+                        <strong>/fake: </strong>Ativa um disfarce temporário.
+                        <br>
+                        <strong>/inv <nick>: </strong>Verifica o inventário do jogador.
+                        <br>
+                        <br>
+                        <em>Essa lista será atualizada constantemente e sem aviso prévio.
+                            A última atualização foi feita no dia 01/09/2025, às 22h04.</em>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="bottom-0 left-0 w-full bg-white rounded-lg shadow-sm dark:bg-gray-900">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                Desenvolvido por <a href="#" class="hover:underline">borgxS</a>
+            </span>
+        </div>
+    </footer>
+
+
+
+    <script src="./src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>

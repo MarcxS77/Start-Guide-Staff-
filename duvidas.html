@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <script src="./src/js/head.js"></script>
+    <title>Lugin - Staff Guide</title>
+</head>
+
+<body>
+
+
+
+    <nav class="bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://lugin.com.br/logo-lugin.png" class="h-8" alt="Lugin Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">STAFF GUIDE</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-1 rtl:space-x-reverse">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">IP:
+                    lugin.com.br</button>
+                <button id="theme-toggle" type="button"
+                    class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Abrir menu principal</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="./index.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./factions.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Factions</a>
+                    </li>
+                    <li>
+                        <a href="./punicoes.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Punições</a>
+                    </li>
+                    <li>
+                        <a href="./duvidas.html"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">Dúvidas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+            <div
+                class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+                <span
+                    class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">Dúvidas</span>
+                <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Dúvidas
+                    frequentes</h1>
+            </div>
+
+            <!-- BLOCO 1: MUITO ALTA (prioridade máxima) -->
+            <div class="factions-minas">
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Como posso
+                                me tornar VIP?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Atualmente, trabalhamos apenas com
+                            os VIPs Mensais (Campeão, Lendário e Supremo). <br> Para conferir valores e vantagens,
+                            acesse nossa loja em: <br> <a
+                                href="https://lugin.com.br/store">https://lugin.com.br/store</a>. </p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Gostaria de
+                                solicitar um reembolso da minha compra. Como faço?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Reembolsos são realizados apenas
+                            em casos de pagamento duplicado ou produto não ativado. Não realizamos reembolsos após a
+                            ativação dos produtos, pois eles são consumíveis e o reembolso poderia prejudicar outros
+                            jogadores. Mesmo assim, se você ainda quiser solicitar o reembolso, entre em contato com a
+                            nossa equipe através do e-mail <a href="mailto:ajuda@lugin.com.br">ajuda@lugin.com.br</a>.
+                            Para mais informações, acesse: <br> <a
+                                href="https://lugin.com.br/politica-reembolso">https://lugin.com.br/politica-reembolso</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Meu VIP não
+                                chegou! O que eu faço?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Caso seu produto não tenha chegado
+                            dentro dos prazos estipulados, abra um ticket em nosso Discord, na área de atendimento,
+                            categoria “Dúvidas” e informe o código ou uma print da dashboard da loja. </p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Minha conta
+                                foi hackeada. O que eu faço?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Para recuperar sua conta, envie um
+                            e-mail para <a href="mailto:ajuda@lugin.com.br">ajuda@lugin.com.br</a> com seu nickname e
+                            uma descrição detalhada do que aconteceu. O prazo para resposta é de até 72h. Em casos
+                            excepcionais, esse prazo pode ser ultrapassado. </p>
+                    </div>
+                </div>
+            </div> <!-- BLOCO 2: ALTA -->
+            <div class="factions-minas">
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Um jogador
+                                me ofendeu! Onde posso denunciá-lo?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Crie sua denúncia em nosso
+                            Discord, na área de atendimento, categoria “Denúncias”. Lembre-se de seguir os padrões
+                            exigidos para que ela não seja recusada. </p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Estava
+                                jogando e encontrei um bug! Como reporto?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Você deve criar um tópico de
+                            reporte de bug em nosso Discord, na área de atendimento, categoria “Bugs”. Certifique-se de
+                            incluir provas do erro para que a equipe possa analisar adequadamente. </p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Sou
+                                desenvolvedor e gostaria de participar da equipe de desenvolvimento. Por onde me aplico?
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> As aplicações para a equipe de
+                            desenvolvimento são feitas através do e-mail <a
+                                href="mailto:jobs@lugin.com.br">jobs@lugin.com.br</a>. </p>
+                    </div>
+                </div>
+            </div> <!-- BLOCO 3: MÉDIA -->
+            <div class="factions-minas">
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Como faço
+                                para entrar na equipe?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> A seleção para a equipe de
+                            moderação começa com o envio da aplicação, que está disponível em: <a
+                                href="https://bit.ly/appslugin">https://bit.ly/appslugin</a>. <br> Os jogadores que mais
+                            se destacarem serão chamados pela Administração para a próxima etapa do processo. </p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Como
+                                desativo meu tell?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Você pode verificar essa e outras
+                            preferências através do seu perfil. Para isso, digite /toggle no chat ou clique na sua
+                            cabeça, localizada no segundo slot do seu inventário. </p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Como eu
+                                vejo as regras do servidor?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Todas as infrações e suas durações
+                            podem ser vistas nas nossas Regras de conduta. Acesse <a
+                                href="https://lugin.com.br/rules-support">https://lugin.com.br/rules-support</a> para
+                            ver. </p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Fui punido
+                                injustamente! O que eu faço?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Você poderá criar uma revisão de
+                            punição em até 7 dias após a aplicação dela, em nosso Discord, na área de atendimento, na
+                            categoria Revisõe </p>
+                    </div>
+                </div>
+            </div> <!-- BLOCO 4: BAIXA -->
+            <div class="factions-minas">
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Onde eu
+                                vejo as regras do Discord?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> As Regras de conduta do Discord
+                            podem ser vistas no canal #Regras. </p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Qual é o
+                                prazo para receber uma resposta do formulário?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> O prazo é de até 30 dias corridos.
+                            Se você não for contatado dentro desse período, considere que o seu formulário não foi
+                            aprovado. Caso deseje, você pode enviar um novo formulário. </p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Desejo
+                                reportar o abuso de um membro da equipe, como proceder?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Você deve enviar um e-mail para <a
+                                href="mailto:ajuda@lugin.com.br">ajuda@lugin.com.br</a> com o nickname do membro da
+                            equipe, uma descrição completa da situação e o máximo de provas possível </p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div
+                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 h-full">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Como posso
+                                receber a tag influencer?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Você pode verificar os requisitos
+                            para a tag Influencer em nosso Discord, no canal #influencers e solicitar através do e-mail:
+                            <a href="mailto:parceiros@lugin.com.br">parceiros@lugin.com.br</a>. No e-mail, informe seu
+                            nickname, seu usuário no Discord e anexe o link do canal. </p>
+                    </div>
+                </div>
+            </div> ***
+
+
+
+
+
+
+            <footer class="bottom-0 left-0 w-full bg-white rounded-lg shadow-sm dark:bg-gray-900">
+                <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                    <div class="sm:flex sm:items-center sm:justify-between">
+                    </div>
+                    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                        Desenvolvido por <a href="#" class="hover:underline">borgxS</a>
+                    </span>
+                </div>
+            </footer>
+
+
+
+            <script src="./src/js/script.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>
