@@ -19,14 +19,13 @@
         0 0 10px var(--ajudante);
 }
 
-.auxilio-punicao-text{
+.auxilio-punicao-text {
     display: flex;
     gap: 0.6em;
     margin: 1em;
-    flex-grow: 1;
 }
 
-.factions-minas{
+.factions-minas {
     display: flex;
     gap: 1em;
     justify-content: center;
