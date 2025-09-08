@@ -197,268 +197,94 @@
 
             </div>
 
+           <div class="w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+  <!-- Mobile: select dropdown -->
+  <div class="sm:hidden">
+    <label for="tabs" class="sr-only">Selecione o kit</label>
+    <select id="tabs"
+      class="bg-gray-50 border-0 border-b border-gray-200 text-gray-900 text-sm rounded-t-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <option value="stats">Kit Básico Rápido</option>
+      <option value="about">Kit Básico Diário</option>
+      <option value="campeaoR">Kit Campeão Rápido</option>
+      <option value="campeaoD">Kit Campeão Diário</option>
+      <option value="campeaoS">Kit Campeão Semanal</option>
+      <option value="campeaoLR">Kit Lendário Rápido</option>
+      <option value="campeaoLD">Kit Lendário Diário</option>
+      <option value="campeaoLS">Kit Lendário Semanal</option>
+      <option value="campeaoSR">Kit Supremo Rápido</option>
+      <option value="campeaoSD">Kit Supremo Diário</option>
+      <option value="campeaoSS">Kit Supremo Semanal</option>
+    </select>
+  </div>
+  <!-- Desktop: tabs -->
+  <ul class="hidden sm:flex text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+    id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
 
+    <li class="w-full"><button id="stats-tab" data-tabs-target="#stats" type="button" role="tab" aria-controls="stats" aria-selected="true" class="inline-block w-full h-full p-4 rounded-ss-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Kit Básico Rápido</button></li>
+    <li class="w-full"><button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false" class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Kit Básico Diário</button></li>
+    <li class="w-full"><button id="campeaoR-tab" data-tabs-target="#campeaoR" type="button" role="tab" aria-controls="campeaoR" aria-selected="false" class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Kit Campeão Rápido</button></li>
+    <li class="w-full"><button id="campeaoD-tab" data-tabs-target="#campeaoD" type="button" role="tab" aria-controls="campeaoD" aria-selected="false" class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Kit Campeão Diário</button></li>
+    <li class="w-full"><button id="campeaoS-tab" data-tabs-target="#campeaoS" type="button" role="tab" aria-controls="campeaoS" aria-selected="false" class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Kit Campeão Semanal</button></li>
+    <li class="w-full"><button id="campeaoLR-tab" data-tabs-target="#campeaoLR" type="button" role="tab" aria-controls="campeaoLR" aria-selected="false" class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Kit Lendário Rápido</button></li>
+    <li class="w-full"><button id="campeaoLD-tab" data-tabs-target="#campeaoLD" type="button" role="tab" aria-controls="campeaoLD" aria-selected="false" class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Kit Lendário Diário</button></li>
+    <li class="w-full"><button id="campeaoLS-tab" data-tabs-target="#campeaoLS" type="button" role="tab" aria-controls="campeaoLS" aria-selected="false" class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Kit Lendário Semanal</button></li>
+    <li class="w-full"><button id="campeaoSR-tab" data-tabs-target="#campeaoSR" type="button" role="tab" aria-controls="campeaoSR" aria-selected="false" class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Kit Supremo Rápido</button></li>
+    <li class="w-full"><button id="campeaoSD-tab" data-tabs-target="#campeaoSD" type="button" role="tab" aria-controls="campeaoSD" aria-selected="false" class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Kit Supremo Diário</button></li>
+    <li class="w-full"><button id="campeaoSS-tab" data-tabs-target="#campeaoSS" type="button" role="tab" aria-controls="campeaoSS" aria-selected="false" class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Kit Supremo Semanal</button></li>
+  </ul>
 
-            <!-- Inclua o Flowbite JS SE quiser usar Flowbite -->
-            <!--
-<script src="https://unpkg.com/flowbite@2.2.0/dist/flowbite.min.js"></script>
--->
+  <div id="fullWidthTabContent" class="border-t border-gray-200 dark:border-gray-600">
+    <div class="p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="stats" role="tabpanel" aria-labelledby="stats-tab">Informações: <br>Cooldown: 2h <br><br>Itens: <br>1x Stone Pickaxe<br>1x Stone Axe<br>1x Stone Shovel<br>1x Stone Hoe<br>4x Oak Log<br>4x Golden Carrot</div>
+    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">Informações: <br>Cooldown: 1d<br><br>Itens: <br>1x Iron Pickaxe<br>1x Iron Axe<br>1x Iron Shovel<br>1x Fishing Rod<br>32x Oak Planks<br>32x Bread</div>
+    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoR" role="tabpanel" aria-labelledby="campeaoR-tab">Informações:<br>Cooldown: 2h <br><br>Itens:<br>1x Iron Pickaxe<br>1x Iron Axe<br>1x Iron Shovel<br>1x Iron Hoe<br>8x Oak Log<br>8x Golden Carrot</div>
+    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoD" role="tabpanel" aria-labelledby="campeaoD-tab">Informações: <br>Cooldown: 1d<br><br>Itens:<br>1x Diamond Pickaxe<br>1x Diamond Axe<br>1x Diamond Shovel<br>1x Fishing Rod<br>4x Golden Apple<br>16x Wind Charge<br>64x Bread<br>128x Oak Planks</div>
+    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoS" role="tabpanel" aria-labelledby="campeaoS-tab">Informações: <br>Cooldown: 7d <br><br>Itens:<br>1x Diamond Helmet (Protection, Unbreaking)<br>1x Diamond Chestplate (Protection, Unbreaking)<br>1x Diamond Leggings (Protection, Unbreaking)<br>1x Diamond Boots (Protection, Unbreaking)<br>1x Diamond Pickaxe (Silk Touch)<br>6x Paper (Unbreaking)<br>8x Creeper Spawn Egg</div>
+    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoLR" role="tabpanel" aria-labelledby="campeaoLR-tab">Informações: <br>Cooldown: 2h<br><br>Itens:<br>1x Iron Pickaxe<br>1x Iron Axe<br>1x Iron Shovel<br>1x Iron Hoe<br>12x Oak Log<br>12x Golden Carrot</div>
+    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoLD" role="tabpanel" aria-labelledby="campeaoLD-tab">Informações: <br>Cooldown: 1d<br><br>Itens:<br>1x Diamond Pickaxe<br>1x Diamond Axe<br>1x Diamond Shovel<br>1x Fishing Rod<br>6x Golden Apple<br>24x Wind Charge<br>64x Bread<br>192x Oak Planks</div>
+    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoLS" role="tabpanel" aria-labelledby="campeaoLS-tab">Informações: <br>Cooldown: 7d<br><br>Itens:<br>1x Diamond Helmet (Protection, Unbreaking)<br>1x Diamond Chestplate (Protection, Unbreaking)<br>1x Diamond Leggings (Protection, Unbreaking)<br>1x Diamond Boots (Protection, Unbreaking)<br>1x Diamond Pickaxe (Silk Touch)<br>8x Paper (Unbreaking)<br>12x Creeper Spawn Egg</div>
+    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoSR" role="tabpanel" aria-labelledby="campeaoSR-tab">Informações: <br>Cooldown: 2h <br><br>Itens:<br>1x Iron Pickaxe<br>1x Iron Axe<br>1x Iron Shovel<br>1x Iron Hoe<br>16x Oak Log<br>16x Golden Carrot</div>
+    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoSD" role="tabpanel" aria-labelledby="campeaoSD-tab">Informações: <br>Cooldown: 1d<br><br>Itens:<br>1x Diamond Pickaxe<br>1x Diamond Axe<br>1x Diamond Shovel<br>1x Fishing Rod<br>2x Enchanted Golden Apple<br>10x Golden Apple<br>32x Wind Charge<br>256x Oak Planks</div>
+    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoSS" role="tabpanel" aria-labelledby="campeaoSS-tab">Informações: <br>Cooldown: 7d<br><br>Itens:<br>2x Diamond Helmet (Protection, Unbreaking)<br>2x Diamond Chestplate (Protection, Unbreaking)<br>2x Diamond Leggings (Protection, Unbreaking)<br>2x Diamond Boots (Protection, Unbreaking)<br>1x Diamond Pickaxe (Silk Touch)<br>16x Creeper Spawn Egg<br>10x Paper (Unbreaking)</div>
+  </div>
+</div>
 
-            <div
-                class="w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                <div class="sm:hidden">
-                    <label for="tabs" class="sr-only">Select tab</label>
-                    <select id="tabs"
-                        class="bg-gray-50 border-0 border-b border-gray-200 text-gray-900 text-sm rounded-t-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                        <option>Statistics</option>
-                        <option>Services</option>
-                        <option>FAQ</option>
-                    </select>
-                </div>
-                <ul class="text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
-                    id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
+<script>
+// Tabs no desktop (já vem no exemplo anterior)
+// Tabs no mobile (select)
+document.getElementById('tabs').addEventListener('change', function() {
+    const selected = this.value;
+    // Ativa/desativa os paineis
+    document.querySelectorAll('[role="tabpanel"]').forEach(panel => {
+      panel.classList.add('hidden');
+    });
+    document.getElementById(selected).classList.remove('hidden');
+    // Atualiza aba ativa no desktop para manter sincronizado
+    document.querySelectorAll('[role="tab"]').forEach(btn => {
+      btn.setAttribute('aria-selected', 'false');
+    });
+    if(document.getElementById(selected+"-tab")) {
+      document.getElementById(selected+"-tab").setAttribute('aria-selected', 'true');
+    }
+});
 
-                    <li class="w-full">
-                        <button id="stats-tab" data-tabs-target="#stats" type="button" role="tab" aria-controls="stats"
-                            aria-selected="true"
-                            class="inline-block w-full h-full p-4 rounded-ss-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                            Kit Básico Rápido
-                        </button>
-                    </li>
-                    <li class="w-full">
-                        <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about"
-                            aria-selected="false"
-                            class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                            Kit Básico Diário
-                        </button>
-                    </li>
-                    <li class="w-full">
-                        <button id="campeaoR-tab" data-tabs-target="#campeaoR" type="button" role="tab"
-                            aria-controls="campeaoR" aria-selected="false"
-                            class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                            Kit Campeão Rápido
-                        </button>
-                    </li>
-                    <li class="w-full">
-                        <button id="campeaoD-tab" data-tabs-target="#campeaoD" type="button" role="tab"
-                            aria-controls="campeaoD" aria-selected="false"
-                            class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                            Kit Campeão Diário
-                        </button>
-                    </li>
-                    <li class="w-full">
-                        <button id="campeaoS-tab" data-tabs-target="#campeaoS" type="button" role="tab"
-                            aria-controls="campeaoS" aria-selected="false"
-                            class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                            Kit Campeão Semanal
-                        </button>
-                    </li>
-                    <li class="w-full">
-                        <button id="campeaoLR-tab" data-tabs-target="#campeaoLR" type="button" role="tab"
-                            aria-controls="campeaoLR" aria-selected="false"
-                            class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                            Kit Lendário Rápido
-                        </button>
-                    </li>
-                    <li class="w-full">
-                        <button id="campeaoLD-tab" data-tabs-target="#campeaoLD" type="button" role="tab"
-                            aria-controls="campeaoLD" aria-selected="false"
-                            class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                            Kit Lendário Diário
-                        </button>
-                    </li>
-                    <li class="w-full">
-                        <button id="campeaoLS-tab" data-tabs-target="#campeaoLS" type="button" role="tab"
-                            aria-controls="campeaoLS" aria-selected="false"
-                            class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                            Kit Lendário Semanal
-                        </button>
-                    </li>
-                    <li class="w-full">
-                        <button id="campeaoSR-tab" data-tabs-target="#campeaoSR" type="button" role="tab"
-                            aria-controls="campeaoSR" aria-selected="false"
-                            class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                            Kit Supremo Rápido
-                        </button>
-                    </li>
-                    <li class="w-full">
-                        <button id="campeaoSD-tab" data-tabs-target="#campeaoSD" type="button" role="tab"
-                            aria-controls="campeaoSD" aria-selected="false"
-                            class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                            Kit Supremo Diário
-                        </button>
-                    </li>
-                    <li class="w-full">
-                        <button id="campeaoSS-tab" data-tabs-target="#campeaoSS" type="button" role="tab"
-                            aria-controls="campeaoSS" aria-selected="false"
-                            class="inline-block w-full h-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                            Kit Supremo Semanal
-                        </button>
-                    </li>
-                </ul>
+// Desktop: alternância já está resolvida com javascript/Flowbite, mas caso queira garantir:
+document.querySelectorAll('[role="tab"]').forEach(button => {
+    button.addEventListener('click', () => {
+        // Desativa as abas
+        document.querySelectorAll('[role="tab"]').forEach(btn => btn.setAttribute('aria-selected', 'false'));
+        // Esconde todos os paineis
+        document.querySelectorAll('[role="tabpanel"]').forEach(panel => panel.classList.add('hidden'));
+        // Ativa clicada
+        button.setAttribute('aria-selected', 'true');
+        const tabTarget = button.getAttribute('data-tabs-target');
+        document.querySelector(tabTarget).classList.remove('hidden');
+        // Sincroniza com o select mobile
+        let select = document.getElementById('tabs');
+        if(select) select.value = tabTarget.replace('#','');
+    });
+});
+</script>
 
-                <div id="fullWidthTabContent" class="border-t border-gray-200 dark:border-gray-600">
-                    <div class="p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="stats" role="tabpanel"
-                        aria-labelledby="stats-tab">
-                        Informações: <br>
-                        Cooldown: 2h <br>
-                        <br>
-                        Itens: <br>
-                        1x Stone Pickaxe<br>
-                        1x Stone Axe<br>
-                        1x Stone Shovel<br>
-                        1x Stone Hoe<br>
-                        4x Oak Log<br>
-                        4x Golden Carrot
-
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel"
-                        aria-labelledby="about-tab">
-                        Informações: <br>
-                        Cooldown: 1d<br>
-                        <br>
-                        Itens: <br>
-                        1x Iron Pickaxe<br>
-                        1x Iron Axe<br>
-                        1x Iron Shovel<br>
-                        1x Fishing Rod<br>
-                        32x Oak Planks<br>
-                        32x Bread
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoR" role="tabpanel"
-                        aria-labelledby="campeaoR-tab">
-                        Informações:<br>
-                        Cooldown: 2h <br>
-                        <br>
-                        Itens:<br>
-                        1x Iron Pickaxe<br>
-                        1x Iron Axe<br>
-                        1x Iron Shovel<br>
-                        1x Iron Hoe<br>
-                        8x Oak Log<br>
-                        8x Golden Carrot
-
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoD" role="tabpanel"
-                        aria-labelledby="campeaoD-tab">
-                        Informações: <br>
-                        Cooldown: 1d<br>
-                        <br>
-                        Itens:<br>
-                        1x Diamond Pickaxe<br>
-                        1x Diamond Axe<br>
-                        1x Diamond Shovel<br>
-                        1x Fishing Rod<br>
-                        4x Golden Apple<br>
-                        16x Wind Charge<br>
-                        64x Bread<br>
-                        128x Oak Planks
-
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoS" role="tabpanel"
-                        aria-labelledby="campeaoS-tab">
-                        Informações: <br>
-                        Cooldown: 7d <br>
-                        <br>
-                        Itens:<br>
-                        1x Diamond Helmet (Protection, Unbreaking)<br>
-                        1x Diamond Chestplate (Protection, Unbreaking)<br>
-                        1x Diamond Leggings (Protection, Unbreaking)<br>
-                        1x Diamond Boots (Protection, Unbreaking)<br>
-                        1x Diamond Pickaxe (Silk Touch)<br>
-                        6x Paper (Unbreaking)<br>
-                        8x Creeper Spawn Egg<br>
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoLR" role="tabpanel"
-                        aria-labelledby="campeaoLR-tab">
-                        Informações: <br>
-                        Cooldown: 2h<br>
-                        <br>
-                        Itens:<br>
-                        1x Iron Pickaxe<br>
-                        1x Iron Axe<br>
-                        1x Iron Shovel<br>
-                        1x Iron Hoe<br>
-                        12x Oak Log<br>
-                        12x Golden Carrot<br>
-
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoLD" role="tabpanel"
-                        aria-labelledby="campeaoLD-tab">
-                        Informações: <br>
-                        Cooldown: 1d<br>
-                        <br>
-                        Itens:<br>
-                        1x Diamond Pickaxe<br>
-                        1x Diamond Axe<br>
-                        1x Diamond Shovel<br>
-                        1x Fishing Rod<br>
-                        6x Golden Apple<br>
-                        24x Wind Charge<br>
-                        64x Bread<br>
-                        192x Oak Planks
-
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoLS" role="tabpanel"
-                        aria-labelledby="campeaoLS-tab">
-                        Informações: <br>
-                        Cooldown: 7d<br>
-                        <br>
-                        Itens:<br>
-                        1x Diamond Helmet (Protection, Unbreaking)<br>
-                        1x Diamond Chestplate (Protection, Unbreaking)<br>
-                        1x Diamond Leggings (Protection, Unbreaking)<br>
-                        1x Diamond Boots (Protection, Unbreaking)<br>
-                        1x Diamond Pickaxe (Silk Touch)<br>
-                        8x Paper (Unbreaking)<br>
-                        12x Creeper Spawn Egg<br>
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoSR" role="tabpanel"
-                        aria-labelledby="campeaoSR-tab">
-                        Informações: <br>
-                        Cooldown: 2h <br>
-                        <br>
-                        Itens:<br>
-                        1x Iron Pickaxe<br>
-                        1x Iron Axe<br>
-                        1x Iron Shovel<br>
-                        1x Iron Hoe<br>
-                        16x Oak Log<br>
-                        16x Golden Carrot
-
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoSD" role="tabpanel"
-                        aria-labelledby="campeaoSD-tab">
-                        Informações: <br>
-                        Cooldown: 1d<br>
-                        <br>
-                        Itens:<br>
-                        1x Diamond Pickaxe<br>
-                        1x Diamond Axe<br>
-                        1x Diamond Shovel<br>
-                        1x Fishing Rod<br>
-                        2x Enchanted Golden Apple<br>
-                        10x Golden Apple<br>
-                        32x Wind Charge<br>
-                        256x Oak Planks<br>
-
-                    </div>
-                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="campeaoSS" role="tabpanel"
-                        aria-labelledby="campeaoSS-tab">
-                        Informações: <br>
-                        Cooldown: 7d<br>
-                        <br>
-                        Itens:<br>
-                        2x Diamond Helmet (Protection, Unbreaking)<br>
-                        2x Diamond Chestplate (Protection, Unbreaking)<br>
-                        2x Diamond Leggings (Protection, Unbreaking)<br>
-                        2x Diamond Boots (Protection, Unbreaking)<br>
-                        1x Diamond Pickaxe (Silk Touch)<br>
-                        16x Creeper Spawn Egg<br>
-                        10x Paper (Unbreaking)<br>
-                    </div>
-                </div>
-            </div>
 
             <div
                 class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 md:p-1 mb-8 mt-4">
